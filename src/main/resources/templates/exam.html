@@ -1,0 +1,10 @@
+<form method="post" action="/exam/submit">
+  <div th:each="q : ${questions}">
+    <p th:text="${q.questionText}"></p>
+    <input type="radio" th:name="${q.id}" value="A"/> <span th:text="${q.optionA}"></span><br>
+    <input type="radio" th:name="${q.id}" value="B"/> <span th:text="${q.optionB}"></span><br>
+    <input type="radio" th:name="${q.id}" value="C"/> <span th:text="${q.optionC}"></span><br>
+    <input type="radio" th:name="${q.id}" value="D"/> <span th:text="${q.optionD}"></span><br>
+  </div>
+  <button type="submit">Submit</button>
+</form>
