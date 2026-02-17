@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Exam Result</title>
+</head>
+<body>
+    <h2>Exam Result</h2>
+    <p>Your score: <span th:text="${score}"></span> / <span th:text="${totalQuestions}"></span></p>
+    <a href="/exam/start">Take Exam Again</a>
+</body>
+</html>
